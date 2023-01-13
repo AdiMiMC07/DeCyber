@@ -4,7 +4,7 @@
 3. git clone "`https://github.com/your-github-id/DeCyber.git`"
 4. Create a branch\
     Change to the repository directory on your computer (if you are not already there):\
-    `cd DeCyber`\
+    `cd DeCyber` then `cd frontend` then `cd decyber-frontend` (this is in case you want to work with frontend)\
     Now create a branch using the git switch command:\
     `git switch -c your-new-branch-name`
 5. Make necessary changes and commit those changes\
