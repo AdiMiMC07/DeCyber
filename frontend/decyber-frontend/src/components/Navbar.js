@@ -1,9 +1,8 @@
 import React from 'react'
-import {
-    Link,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#01171b" }}>
@@ -18,16 +17,21 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/" style={{color: "#3D6343",fontSize:"20px",fontWeight:"600"}}>Home</Link>
+                                <Link className="nav-link active" aria-current="page" to="/" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/ap" style={{color: "#3D6343",fontSize:"20px",fontWeight:"600"}}>AP</Link>
+                                <Link className="nav-link active" to="/ap" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>AP</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/cp" style={{color: "#3D6343",fontSize:"20px",fontWeight:"600"}}>CP</Link>
+                                <Link className="nav-link active" to="/cp" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>CP</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/dashboard" style={{color: "#3D6343",fontSize:"20px",fontWeight:"600"}}>Dashboard</Link>
+                                <Link className="nav-link active" to="/dashboard" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>Dashboard</Link>
+                            </li>
+                            <li>
+                                <Link className='dropdown-item' to="/login">
+                                    <button type="button" className="btn" style={{ backgroundColor: "#212529", color: "#3D6343",fontSize: "20px", fontWeight: "600" }}>Logout</button>
+                                </Link>
                             </li>
                         </ul>
                     </div>

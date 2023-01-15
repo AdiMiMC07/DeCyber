@@ -1,9 +1,11 @@
-import './App.css'; 
+import './App.css';
 import Navbar from './components/Navbar';
 import ArmyPoint from './components/ArmyPoint';
 import CountryPoint from './components/CountryPoint';
 import WorldMap from './components/WorldMap';
 import Dashboard from './components/Dashboard';
+import Login from './components/Login';
+import Signup from './components/Signup';
 import React from 'react'
 import {
   BrowserRouter,
@@ -16,12 +18,14 @@ function App() {
     // all under JSX fragment(<> & </>) as we need to pass only one element in the return();
     <>
       <BrowserRouter>
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route exact path="/" element={<WorldMap/>}/>
-          <Route exact path="/ap" element={<ArmyPoint/>}/>
-          <Route exact path="/cp" element={<CountryPoint/>}/>
-          <Route exact path="/dashboard" element={<Dashboard/>}/>
+          <Route exact path="/" element={<WorldMap />} />
+          <Route exact path="/ap" element={<ArmyPoint />} />
+          <Route exact path="/cp" element={<CountryPoint />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
 
