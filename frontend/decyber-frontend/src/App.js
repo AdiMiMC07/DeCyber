@@ -1,10 +1,25 @@
-import './App.css';
+import './App.css'; 
+import Navbar from './components/Navbar';
+import WorldMap from './components/WorldMap';
+import React from 'react'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className=' bg-slate-600 text-red-500'>DeCyber</h1>
-    </div>
+    // all under JSX fragment(<> & </>) as we need to pass only one element in the return();
+    <>
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route exact path="/" element={<WorldMap/>}/>
+        </Routes>
+      </BrowserRouter>
+
+    </>
   );
 }
 
