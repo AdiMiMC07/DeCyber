@@ -1,10 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
+.Login{
     color: #3D6343;
-
-}
-.Dashboard{
     background-color : #01171b;
     width: 100vw;
     height: 100vh;

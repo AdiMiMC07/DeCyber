@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
 import "../styles/dashboard.css"
 
-const Dashboard = () => {
+export default function Dashboard() {
   return (
-    <div className="Dashboard">
+    <>
+      <div className='Dashboard'>
         <h1>Dashboard Component</h1>
-    </div>
-  );
+      </div>
+    </>
+  )
 }
-export default Dashboard;
