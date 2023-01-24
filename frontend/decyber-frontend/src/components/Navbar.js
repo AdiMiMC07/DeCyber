@@ -14,8 +14,8 @@ export default function Navbar() {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>Home</Link>
                             </li>
@@ -23,14 +23,15 @@ export default function Navbar() {
                                 <Link className="nav-link active" to="/ap" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>AP</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/cp" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>CP</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" to="/dashboard" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>Dashboard</Link>
+                                <Link className="nav-link active" to="/dashboard" style={{ color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                    </svg>
+                                </Link>
                             </li>
                             <li>
                                 <Link className='dropdown-item' to="/login">
-                                    <button type="button" className="btn" style={{ backgroundColor: "#212529", color: "#3D6343",fontSize: "20px", fontWeight: "600" }}>Logout</button>
+                                    <button type="button" className="btn" style={{ backgroundColor: "#212529", color: "#3D6343", fontSize: "20px", fontWeight: "600" }}>Logout</button>
                                 </Link>
                             </li>
                         </ul>
