@@ -1,1 +1,1 @@
-Frontend will be made using React JS and Tailwind CSS
+Frontend will be made using React JS and Bootstrap

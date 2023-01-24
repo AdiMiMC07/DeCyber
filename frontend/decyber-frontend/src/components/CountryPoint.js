@@ -4,7 +4,9 @@ import "../styles/countrypoint.css"
 const CountryPoint = () => {
   return (
     <div className="CountryPoint">
-        <h1>Country Component</h1>
+      <div className='cp-content d-flex justify-content-center align-items-center'>
+        <div className='cp-subcontent'>Question</div>
+      </div>
     </div>
   );
 }
