@@ -1,1 +1,0 @@
-Frontend will be made using React JS and Bootstrap
